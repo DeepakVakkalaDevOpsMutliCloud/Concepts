@@ -1,0 +1,47 @@
+How to know the size of network
+
+size of network
+2 * n-2
+n is no.of bits in host id
+...........................................
+
+##Example-1 Calculating the Number of Usable IP Addresses in a Network (or)
+            How many no.0f devices can i connect to the network?
+
+IP Address: 10.0.1.7
+Subnet Mask: 255.0.0.0
+network-id - 10
+host-id - 0.1.7
+2 * n -2
+n is no.of bits in host id (3 * 8(bits) = 24bits)
+16,777,214
+............................................
+Example 2: Determining the CIDR Notation for 2000 Usable Devices
+
+
+2000 devices
+2 * 11 = 2048 which is greater than the count 2000
+2 * 11 is considered
+n is host id octets
+2 * n = 11 (hostid)
+host id = 11
+netwokr id = 32 - 11 = 21
+11111111.11111111.11111000.000000000
+255.255.248.000
+.............................................
+
+##Example-3 Expanding CIDR 192.168.128.0/18 to Determine the IP Range
+expand cidr 192.168.128.0/18
+            first try to write subnet mask 
+             11111111.11111111.11000000.00000000
+             [11111111.11111111.11] is fixed
+             [000000.00000000] is variable
+             then try to expand 128 as decimal form,here as 18 comes in the 3rd octet
+             then write starting ip
+                       192.168.10000000.00000000 = 192.168.128.0 
+               in this ---.---.--******.******** = - are fixed , * varies
+               possibilities are all 0 and all 1
+               192.168.10000000.00000000 = 192.168.128.0
+               192.168.10111111.11111111
+                       192.168.10111111.00000000 = 192.168.191.255             
+..................

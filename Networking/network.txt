@@ -45,3 +45,27 @@ expand cidr 192.168.128.0/18
                192.168.10111111.11111111
                        192.168.10111111.00000000 = 192.168.191.255             
 ..................
+10.0.0.0 > 198.168.0.0 no.of connection of devices
+
+
+10.0.0.0/8      >  more devices can connect
+172.16.0.0/12   >
+192.158.0.0/16
+
+...........................
+10.0.0.0/20
+10.0.0.0/19
+
+10.0.0.0/19 can connect to more devices
+.........................
+
+subnet mask
+
+we should take N which is always greater than N of private ip addresses
+(10.0.0.0/8       
+ 172.16.0.0/12   
+ 192.158.0.0/16)
+
+if N is 23 then we should take 10.0.0.0/8 ,172.16.0.0/12 , 192.158.0.0/16 
+if N is 9  then we should take 10.0.0.0/8 
+................................
